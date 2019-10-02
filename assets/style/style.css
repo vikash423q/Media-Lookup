@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#media {
+  min-height: 200px;
+}
+
+.media-card {
+  background: #fff;
+  margin-bottom: 0;
+  border: 1px solid #ddd;
+}
+
+navbar {
+  position: sticky;
+  top: 0;
+}
+
+.navbar .nav-link {
+  font-size: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.page-header {
+  background: url('/assets/img/blogcover.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+#blogpage-header {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+  height: 400px;
+}
+
+.dark-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 400px;
+}
+
+.blogpage-dark-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 400px;
+}
+
+#blog {
+  margin-top: -8rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  box-shadow: 3px 0 3px -2px #ddd,
+    -3px 0 3px -2px #ddd;
+}
+
+#blog .featured-line {
+  font-family: 'Merriweather',
+    serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #333;
+}
+
+#blog .blog-title {
+  font-family: 'Lora',
+    serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+
+}
+
+.card,
+.card-body {
+  box-shadow: 1px 1px 1px #bbb;
+}
+
+.showcase-movie,
+.showcase-book,
+.showcase-tvshow {
+  margin: 0;
+  padding: 0;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #808080;
+}
+
+.card-header.showcase-movie-header,
+.card-header.showcase-tvshow-header,
+.card-header.showcase-book-header {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+}
+
+.movie-img-container,
+.tvshow-img-container,
+.book-img-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.movie-title,
+.book-title,
+.tvshow-title {
+  font-size: 1.2rem;
+}
+
+.overview-movie-container,
+.overview-tvshow-container,
+.overview-book-container {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.overview-movie-text,
+.overview-tvshow-text,
+.overview-book-text {
+  font-size: 0.9rem;
+}
+
+.more-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.line {
+  background: #fff;
+  height: 1px;
+  margin: 4px;
+}
+
+.movie-details {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.book-subtitle {
+  font-size: 0.8rem;
+}
+
+.heading,
+.subheading {
+  font-family: 'Space Mono',
+    monospace;
+  font-size: 1.2rem;
+}
+
+.featured-text {
+  font-family: Neuton,
+    'serif';
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.dropdown-menu {
+  overflow: scroll;
+}
+
+
+.twitter-typeahead,
+.tt-hint,
+.tt-input,
+.tt-menu {
+  width: 100%;
+}
+
+.typeahead {
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 2px solid #17a2b8;
+  height: 3rem;
+}
+
+.tvshow-card,
+.book-card,
+.movie-card {
+  background: #e6ffff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0 0 #bbb;
+}
+
+.tt-suggestion:hover {
+  color: #fff;
+  background-color: #0097cf;
+}
+
+@media (max-width:576px) {
+
+  .showcase-movie,
+  .showcase-book,
+  .showcase-tvshow {
+    max-height: 500px;
+  }
+
+  .dark-overlay {
+    min-height: 240px;
+  }
+
+  .display-4 {
+    font-size: 2.4rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+
+  .blogpage-dark-overlay {
+    min-height: 240px;
+  }
+
+  #blogpage-header {
+    height: 240px;
+  }
+
+  .page-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .page-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    max-width: 360px;
+    margin: auto;
+  }
+
+  #blog {
+    margin-top: -6rem;
+  }
+
+  #blog .blog-title {
+    font-size: 1.6rem;
+  }
+
+  #blog .featured-line {
+    font-size: 1rem;
+  }
+
+  .subheading {
+    font-size: 0.9rem;
+  }
+}
+
+.test {
+  height: 300px;
+}

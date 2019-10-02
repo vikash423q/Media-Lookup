@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Neuton|Space+Mono" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+    <title>vikashgaurav</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav id="nav" class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vikash Gaurav</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarId">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarId" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-4">
+                        <a href="http://vikashgaurav.com/portfolio" class=" nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a href="http://vikashgaurav.com/scribble/blog" class=" nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a href="http://vikashgaurav.com/projects" class=" nav-link active">Project</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a href="http://vikashgaurav.com/media" class="nav-link">Media</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page header -->
+    <section class="page-header text-center text-white mb-3">
+        <div class="dark-overlay py-5 d-flex flex-column align-item-center justify-content-center">
+            <h1 class='heading'></h1>
+            <h2 class="subheading"></h2>
+        </div>
+
+    </section>
+
+    <!-- Blogs -->
+    <!-- <section id="blog-container" class="pt-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-3"></div>
+        <div class="col">
+          <div class="search-bar input-group mb-3">
+            <input type="text" class="form-control" name="movie" placeholder="Search For.." aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="input-group-text btn btn-outline-info" type="submit" id="basic-addon2">Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </section> -->
+
+    <!--Add Movies -->
+    <div id="root">
+
+    </div>
+    <section id="media" class="pt-4 my-5">
+        <div class="container">
+            <h2 class="display-4 text-secondary text-center">The Media Project</h2>
+            <h3 class="lead text-center">Using TMDB API for movies and tvshows, and Google Books API for books, i've
+                created a
+                one stop place where you could look up any kind of media.</h3>
+            <div class="row mt-2">
+                <div class="col-md-6 col-lg-4 mb-2">
+                    <div>
+                        <div class="search-tvshow input-group my-3">
+                            <input id="tvshow-text" type="text" class="form-control typeahead"
+                                placeholder="Search TV Shows" name="movie" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div id="tvshow-card"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-2">
+                    <div>
+                        <div class="search-movie input-group my-3">
+                            <input id="movie-text" type="text" class="form-control typeahead"
+                                placeholder="Search Movies" name="movie" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div id="movie-card"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-2">
+                    <div>
+                        <div class="search-book input-group my-3">
+                            <input id="book-text" type="text" class="form-control typeahead" placeholder="Search Books"
+                                name="movie" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+                        <div id="book-card"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <hr />
+
+
+    <!-- Pagination
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav> -->
+
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark p-5 mt-5">
+        <div class="d-flex flex-row align-item-center justify-content-center">
+            <div class="mr-4">
+                <a href="https://twitter.com/Vikash12989849">
+                    <i class="fab fa-twitter fa-2x text-white"></i>
+                </a>
+            </div>
+            <div class="mr-4">
+                <a href="https://www.facebook.com/vkumargaurav">
+                    <i class="fab fa-facebook fa-2x text-white"></i>
+                </a>
+            </div>
+            <div class="mr-4">
+                <a href="https://www.instagram.com/vikash_kumar_gaurav/">
+                    <i class="fab fa-instagram fa-2x text-white"></i>
+                </a>
+            </div>
+            <div class="mr-4">
+                <a href="https://github.com/vikash423q">
+                    <i class="fab fa-github fa-2x text-white"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="assets/js/dateformat.js"></script>
+    <script src="assets/js/typeahead.bundle.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/movies.js"></script>
+    <script src="assets/js/tvshows.js"></script>
+    <script src="assets/js/books.js"></script>
+</body>
+
+</html>
