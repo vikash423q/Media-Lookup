@@ -1,7 +1,7 @@
 var getBooks = () => {
     return function(val, cb, scb){
     var formatted_val = val.split(' ').join('+');
-    const api_key = 'AIzaSyD0FCNViW0Xy-BLPHyqf6iNWfsYm_rtgvU';
+    const api_key = '';
     const api_url = `https://www.googleapis.com/books/v1/volumes?q=${formatted_val}&key=${api_key}`;
     $.get(api_url, function (data, status) {
         const books = [];
