@@ -1,3 +1,3 @@
-<div align="center" style="display:flex;">
- <img src="http://vikashgaurav.com/util/download/media.gif" width="85%"></img>
+<div align="center">
+ <img src="http://vikashgaurav.com/util/download/media.gif" width="50%"></img>
 </div>
